@@ -10,13 +10,34 @@
 <body>
     <div class="container">
         <div class="box">
-            <button>bb</button>
+            <div class="left">
+
+                <label for="coins">Choose a current:</label>
+                <select name="coins" id="coins">
+                  <!--   <option  selected  disabled>Seçiniz</option>
+                    <option value="saab">Saab</option>
+                    <option value="opel">Opel</option>
+                    <option value="audi">Audi</option> -->
+                </select>
+            </div>
+            <div class="right">
+
+               <div class="selectedInfo">
+                <!--    <h3>EUR</h3>
+                   <p>Euro</p>
+                   <span>$</span><span>41000</span> -->
+
+               </div>
+               <button id="show">göster</button>
+            </div>
         </div>
-        <div id="chart">
-        </div>
+        <div>
+            <canvas id="myChart"></canvas>
+          </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart.js"></script>
     <script src="app.js"></script>
+ 
 </body>
 </html>
